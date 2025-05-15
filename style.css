@@ -1,0 +1,49 @@
+
+
+button{
+    text-align: center;
+    background-color: #CA8440 ; 
+    color: white ;
+    border: none;
+    font-size: 30px;
+    margin-top: 60px;
+    padding: 20px 40px   ;
+}
+
+.container{ 
+    text-align: center;
+    background-image: url(./images/IMAGE\ DU\ BAS.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 1300px;
+    padding-top: 350px;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top : 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding-top: 350px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+h1, h3, button {
+    position: relative; /* Pour que le texte reste au-dessus */
+    z-index: 2;
+}
+
+h1{
+    font-size: 60px;
+    color : white
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+}
